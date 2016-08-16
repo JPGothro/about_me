@@ -6,12 +6,38 @@
 
 body {
   background-color: lightblue;
+  height: 100%;
+}
+
+#imgSection {
+  display: block;
+  width: 20%;
+  float: left;
+}
+
+main {
+  display: block;
+  width: 70%;
+  height: auto;
+  float: right;
+}
+
+div {
+  position: absolute;
+  top: 40%;
+}
+
+#quiz {
+  width: 100%;
+  display: block;
+  float: left;
 }
 
 h1{
   width: 80%;
   color: green;
   margin: auto;
+  text-align: center;
 }
 
 p i {
