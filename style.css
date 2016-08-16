@@ -1,0 +1,28 @@
+/* CSS Styling */
+
+/** {
+  outline: solid blue;
+}*/
+
+body {
+  background-color: lightblue;
+}
+
+h1{
+  width: 80%;
+  color: green;
+  margin: auto;
+}
+
+p i {
+  font-size: 20px;
+  color: red;
+}
+
+ol {
+  width: 60%;
+  margin: auto;
+  background-color: gold;
+  color: indigo;
+  border: 2px solid orange;
+}
