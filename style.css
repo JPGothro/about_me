@@ -1,12 +1,12 @@
 /* CSS Styling */
 
-* {
+/** {
   outline: solid blue;
-}
+}*/
 
 body {
   background-color: rgb(173, 216, 230);
-  height: 1000px;
+  height: 900px;
   padding: 5px 5px 20px 5px;
 }
 
@@ -16,13 +16,9 @@ div.mycontainer {
 }
 
 #imgSection {
-  width: 250px;
   float: left;
   border: 2px solid navy;
   padding: 2px;
-}
-
-img {
 }
 
 main {
@@ -31,10 +27,6 @@ main {
   margin-top: 200px;
   float: right;
 }
-
-div {
-}
-
 
 #quiz {
   width: 100%;
