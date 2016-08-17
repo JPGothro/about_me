@@ -1,36 +1,46 @@
 /* CSS Styling */
 
-/** {
+* {
   outline: solid blue;
-}*/
+}
 
 body {
-  background-color: lightblue;
-  height: 100%;
+  background-color: rgb(173, 216, 230);
+  height: 1000px;
+  padding: 5px 5px 20px 5px;
+}
+
+div.mycontainer {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #imgSection {
-  display: block;
-  width: 20%;
+  width: 250px;
   float: left;
+  border: 2px solid navy;
+  padding: 2px;
+}
+
+img {
 }
 
 main {
-  display: block;
-  width: 70%;
+  width: 725px;
   height: auto;
+  margin-top: 200px;
   float: right;
 }
 
 div {
-  position: absolute;
-  top: 40%;
 }
+
 
 #quiz {
   width: 100%;
   display: block;
   float: left;
+  height: 80%;
 }
 
 h1{
