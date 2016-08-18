@@ -13,18 +13,22 @@ var answer;
 var answerArray = new Array();
 var answerCount = 0;
 
+var theQuestions = ['Was John born in the Pacific Northwest?', 'Does John have a valid passport?', 'Has John ever had a broken bone?', 'Has he had any viable off-spring?', 'Is John a friend-of-dogs?'];
+var correctAnswers = ['yes', 'yes', 'no', 'no','yes'];
+var incorrectAnswers = ['no', 'no', 'yes', 'yes', 'no'];
+
 // On to the questions and answers, including checking the validity...
 function birthQuestion() {
-  currentQuestion = 'Was John born in the Pacific Northwest?';
+  currentQuestion = theQuestions[0];
   answer = prompt(currentQuestion).toLowerCase();
   questionArray.push(currentQuestion);
   answerArray.push(answer);
 
-  if (answer === 'y' || answer === 'yes') {
+  if (answer === correctAnswers[0] || answer === correctAnswers[0][0]) {
     // it's a YES!
     alert('You got that right! He was born in Washington state.');
     answerCount++;
-  } else if (answer === 'n' || answer === 'no') {
+  } else if (answer === incorrectAnswers[0] || answer === incorrectAnswers[0][0]) {
     // that is a NO.
     alert('Sorry, that is not the right answer: he actually was born in the PacNW.');
   } else {
@@ -36,15 +40,15 @@ function birthQuestion() {
 birthQuestion();
 
 function passportQuestion() {
-  currentQuestion = 'Does John have a valid passport?';
+  currentQuestion = theQuestions[1];
   answer = prompt(currentQuestion).toLowerCase();
   questionArray.push(currentQuestion);
   answerArray.push(answer);
 
-  if (answer === 'y' || answer === 'yes') {
+  if (answer === correctAnswers[1] || answer === correctAnswers[1][0]) {
     alert('Yeppers, John has a valid passport! He can leave the country. Hm...');
     answerCount++;
-  } else if (answer === 'n' || answer === 'no') {
+  } else if (answer === incorrectAnswers[1] || answer === incorrectAnswers[1][0]) {
     alert('No, no, no! He does have a valid one!');
   } else {
     alert('Stop with the bad input, already!');
@@ -54,14 +58,14 @@ function passportQuestion() {
 passportQuestion();
 
 function boneQuestion() {
-  currentQuestion = 'Has John ever had a broken bone?';
+  currentQuestion = theQuestions[2];
   answer = prompt(currentQuestion).toLowerCase();
   questionArray.push(currentQuestion);
   answerArray.push(answer);
 
-  if (answer === 'y' || answer === 'yes') {
+  if (answer === correctAnswers[2] || answer === correctAnswers[2][0]) {
     alert('You answered YES, which is wrong-a-mundo!');
-  } else if (answer === 'n' || answer === 'no') {
+  } else if (answer === incorrectAnswers[2] || answer === incorrectAnswers[2][0]) {
     alert('No, John has been lucky enough to never have had a broken bone.');
     answerCount++;
   } else {
@@ -72,14 +76,14 @@ function boneQuestion() {
 boneQuestion();
 
 function viableQuestion() {
-  currentQuestion = 'Has he had any viable off-spring?';
+  currentQuestion = theQuestions[3];
   answer = prompt(currentQuestion).toLowerCase();
   questionArray.push(currentQuestion);
   answerArray.push(answer);
 
-  if (answer === 'y' || answer === 'yes') {
+  if (answer === correctAnswers[3] || answer === correctAnswers[3][0]) {
     alert('Yeah, no. John does not have any off-spring. Unless those aliens have done something nefarious...');
-  } else if (answer === 'n' || answer === 'no') {
+  } else if (answer === incorrectAnswers[3] || answer === incorrectAnswers[3][0]) {
     alert('No children for John. He\'s enough of a child on his own. Correct!');
     answerCount++;
   } else {
@@ -90,15 +94,15 @@ function viableQuestion() {
 viableQuestion();
 
 function dogQuestion() {
-  currentQuestion = 'Is John a friend-of-dogs?';
+  currentQuestion = theQuestions[4];
   answer = prompt(currentQuestion).toLowerCase();
   questionArray.push(currentQuestion);
   answerArray.push(answer);
 
-  if (answer === 'y' || answer === 'yes') {
+  if (answer === correctAnswers[4] || answer === correctAnswers[4][0]) {
     alert('Yes, he is a friend to dogs. At least friendly ones.');
     answerCount++;
-  } else if (answer === 'n' || answer === 'no') {
+  } else if (answer === incorrectAnswers[4] || answer === incorrectAnswers[4][0]) {
     alert('Just what do you think of John?!!? He is shocked!');
   } else {
     alert('Invalid input is for the dogs.');
