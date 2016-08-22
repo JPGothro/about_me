@@ -1,17 +1,18 @@
 /* CSS Styling */
 
 /** {
-  outline: solid blue;
+  outline: solid green;
 }*/
 
 body {
-  background-color: rgb(173, 216, 230);
+  background-color: rgb(210, 255, 200);
   height: 900px;
   padding: 5px 5px 20px 5px;
 }
 
 div.mycontainer {
   width: 1000px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -23,16 +24,26 @@ div.mycontainer {
 
 main {
   width: 725px;
-  height: auto;
+  height: 300px;
   margin-top: 200px;
   float: right;
 }
 
-#quiz {
+nav {
+  margin-top: 350px;
+  height: 20px;
   width: 100%;
-  display: block;
   float: left;
-  height: 80%;
+}
+
+ul {
+  position: absolute;
+  margin:0 auto;
+}
+
+nav li {
+  display: inline;
+  margin: 10px;
 }
 
 h1{
@@ -47,10 +58,27 @@ p i {
   color: red;
 }
 
+/* second page */
+#quiz {
+  width: 100%;
+  display: block;
+  float: left;
+  height: 80%;
+}
+
 ol {
   width: 60%;
   margin: auto;
   background-color: gold;
   color: indigo;
   border: 2px solid orange;
+}
+
+/* resume page */
+.resume {
+  width: 80%;
+  height: 420px;
+  margin: auto;
+  border: 2px solid green;
+  background-color: #8800ff;
 }
